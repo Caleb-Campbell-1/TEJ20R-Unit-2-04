@@ -1,8 +1,18 @@
-/* Copyright (c) 2020 MTHS All rights reserved
+/* Copyright (c) 2025 MTHS All rights reserved
  *
- * Created by: XXX
- * Created on: Sep 2020
- * This program ...
+ * Created by: Caleb Campbell
+ * Created on: Sep 2025
+ * This program will accept an imput for temperature
 */
 
-basic.showString('Hello, World!')
+// our variables
+let temperature: number
+
+basic.clearScreen()
+basic.showIcon(IconNames.Happy)
+basic.pause(1000)
+
+input.onButtonPressed(Button.A, function () {
+    basic.showNumber(input.temperature())
+    temperature = (input.temperature())
+})
