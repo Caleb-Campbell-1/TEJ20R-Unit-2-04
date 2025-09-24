@@ -14,5 +14,6 @@ basic.pause(1000)
 
 input.onButtonPressed(Button.A, function () {
     basic.showNumber(input.temperature())
-    temperature = (input.temperature())
+    temperature = input.temperature()
+    basic.showString('Temperature is: ' + temperature.toString() + ' degrees C. ')
 })
